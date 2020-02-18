@@ -9,6 +9,10 @@
     display: none;
 }
 
+.body {
+    background-image: url(./landing.png);
+}
+
 .headerParent {
     display: flex;
     width: 100vw;
@@ -35,8 +39,19 @@
     height: 28vh;
     width: 100vw;
 
-    transition: all .5s ease-in-out;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 
